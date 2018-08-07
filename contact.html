@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <meta name="viewport" content="width=device-width">
+    
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="name">
+                <h1>Jared Harris</h1>
+            </div>
+            <nav class="menu">
+                <a href="index.html">About</a> |
+                <a href="portfolio.html">Portfolio</a> |
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+        <div id="container">
+          <div class="content">
+            <div class="content1">
+                <h2>Contact</h2>
+                <section class="break"></section>
+                <!--I dont know why yet, but for="" in label and id="" in input need to match-->
+                <!--Updated: it's a formal way to link a label to a form(input) widget.-->
+                  <form>
+                    <div>
+                     <label for="name">Name:</label>
+                        <br>
+                      <input type="text" id="name" name="user_name" placeholder="Name:">
+                    </div>
+                    <div>
+                     <label for="mail">E-mail:</label>
+                        <br>
+                      <input type="email" id="mail" name="user_mail" placeholder="noemail@noemail.com">
+                    </div>
+                    <div>
+                      <label for="msg">Message:</label>
+                        <br>
+                        <!--textarea's will overwrite the placeholder if there is a space or text in the content area-->
+                      <textarea id="msg" name="user_message" placeholder="Message:"></textarea>
+                   </div>
+                   <div class="button">
+                      <button type="submit">Submit</button>
+                    </div>
+                 </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="bar"></div>
+        <div class="copyright">
+            <div class="cr">
+                 Copyright &copy;
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

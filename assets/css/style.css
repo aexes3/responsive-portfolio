@@ -1,0 +1,292 @@
+/*This begins the bio page - has links to the contact and portfolio page for general sizing*/
+body{
+  background-color: #ffffff;
+  margin: 0;
+}
+/*Global*/
+.header{
+  border: 0px solid #cccccc;
+  width: 960px;
+  background-color: white;
+  margin: auto;
+}
+.name{
+  background-color: #4aaaa5;
+  color: white;
+  margin: 0 200px 0 0px;
+  /*width: 200px;*/
+  display: inline-block;
+  padding: 0 10px 0 15px;
+  text-align: center;
+}
+header nav {
+  float: right;
+  position: relative;
+  top: 30px;
+  display: inline-block;
+  font-family: 'Georgia',Times, Times New Roman, serif;
+  font-size: 14px;
+}
+.menu a {
+  color: #cccccc;
+  text-decoration: none;
+}
+.menu a:hover {
+  text-decoration: underline;
+}
+a {
+  text-decoration: none;
+  color: rgb(150, 7, 143);
+}
+a:hover {
+  text-decoration: underline;
+}
+
+#container{
+  height: 550px;
+  background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/camouflage.png);
+  padding: 20px 0 50px 0;
+  border-top: 1px solid black;
+}
+#container .content {
+  margin: auto;
+  width: 900px;
+  background-color: #ffffff;
+  height: 80%;
+  padding: 30px;
+}
+
+#container .content1 h2 {
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  color: #4aaaa5;
+}
+.break{
+  height: 1px;
+  width: 900px;
+  background-color: grey;
+}
+.copyright{
+  background-color: #666666;
+  height: 50px;
+  width: 100%;
+}
+.copyright .cr {
+  border-top: 3px solid #4aaaa5;
+  text-align: center;
+  padding: 30px;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/* Bio Page*/
+img.pic {
+  width: auto;
+  float: left;
+  height: 150px;
+  margin: 25px 25px 5px 0px;
+}
+
+span{
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+/* Contact Page*/
+form {
+    margin: 20px auto;
+    width: 900px; /*this matches the grey bar px length*/
+  }
+  /*not sure what this (1em) is but it is 
+  needed for spacing between the input boxes*/
+  form div + div {
+    margin-top: 1em;
+  }
+  
+  label {
+    text-align: left;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #222;
+  }
+  
+  input, textarea {
+    /*To make sure that all text fields have the same font settings*/
+    font: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 1.5;
+  
+    /* To give the same size to all text fields */
+    width: 900px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    margin: 10px 0 0 0;
+  }
+  
+  input:focus, textarea:focus {
+    /* To give a little highlight on active elements */
+    border-color: #000;
+    padding: 0 0 0 5px;
+  }
+  
+  textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+    height: 8em;
+  }
+  
+  button {
+    float: left;
+    background-color: #4aaaa5;
+    color: #fff;
+    text-align: center;
+    width: 75px;
+    height: 36px;
+    font-size: 12px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  }
+
+  /* Portfolio page*/
+  .stack {
+    margin: 20px 0 0 0; /*this put a margin on top of the photos and
+    below the breaker bar*/
+  }
+
+  .interests {
+    position: relative; /*this allows you align the property elsewhere */
+    display: inline-block; /*makes all the divs appear on the same line */
+    width: 20%; /* this is 20% of 900px (container box) divided by 5 photos */
+    height: 200px;
+    float: left; 
+    text-align: center;
+    overflow: hidden; /* overflow keeps the content inside container/wrapper */
+  }
+
+  .interests img {
+    height: 100%; /* this is taking up the full height (200px) */
+    width: auto;
+    overflow: hidden; /* hides anything extra outside the image*/
+  }
+
+  .interests h3 {
+    position: absolute; /*aligns the property in relation to it's parent element*/
+    background-color: #4aaaa5;
+    color: #fff;
+    bottom: 20px; /* these keep it to 20px from the bottom, left & right
+                     of the current containter, the images. */
+    left: 0;
+    right: 0;
+  }
+  
+  /* Media Queries */
+   /*Global*/
+ @media (max-width: 768px){
+  header .name,
+  header nav{
+    /*width: 25%;*/
+    text-align: center;
+    float: none;
+    margin: 0 0 0 25px;
+  }
+  header nav { /*Cannot get the nav to line up*/
+    top: 10px;
+    word-spacing: 3px;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 15px;
+    float: right; 
+  }
+  .break{
+    width: 95%;
+  }
+  #container{
+    height: auto;
+  }
+  #container .content{
+    width: 85%;
+  }
+
+/*About me*/
+  img.pic{
+    width: 35%;
+    height: auto;
+  }
+  span{
+    line-height: 1.2;
+    color: #444444
+  }
+/*Portfolio*/ 
+.interests{
+float: none;
+display: inline-block;
+width: 40%;
+text-align: center;
+  }
+.interests img{
+  width: 600px;
+  height: 300px;
+}
+.interests h3 {
+  padding: 10px;
+  bottom: 2px;
+}
+/*Contact*/
+input, textarea {
+max-width: 600px;
+} 
+}
+
+  /*Global*/
+  @media (max-width: 640px){
+    header .name,
+    header nav{
+      width: 100%;
+      text-align: center;
+      float: none;
+    }
+    header nav {
+      top: 0px;
+      word-spacing: 33px;
+      line-height: 20px;
+      font-weight: bold;
+      margin: 15px;
+    }
+    .break{
+      width: 95%;
+    }
+    #container{
+      height: auto;
+    }
+    #container .content{
+      width: 85%;
+    }
+
+  /*About me*/
+    img.pic{
+      width: 95%;
+      height: auto;
+    }
+    span{
+      line-height: 1.2;
+      color: #444444
+    }
+  /*Portfolio*/ 
+  .interests{
+  float: none;
+  display: block;
+  width: 100%;
+  text-align: center;
+    }
+  .interests img{
+    width: 600px;
+    height: 300px;
+  }
+  .interests h3 {
+    padding: 10px;
+    bottom: 2px;
+  }
+/*Contact*/
+input, textarea {
+  max-width: 500px;
+  } 
+}
+  
