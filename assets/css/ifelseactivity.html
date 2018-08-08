@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+
+        let eatSteak = confirm("Do you eat steak?");
+
+// If the user eats steak (eatSteak === true) we run the following code block.
+if (eatSteak) {
+  document.write("Here's a steak");
+}
+// If the above condition isn't met (eatSteak !== true), run the following block of code instead.
+else {
+  document.write("Here's a tofu stir fry!");
+}
+
+// Bonus
+// Here we ask the user what year they were born, and store their response to a variable.
+var birthYear = prompt("What year were you born?");
+
+// If the user was born before 1995, alert "SAKE SAKE SAKE!"
+if (birthYear < 1995) {
+  alert("SAKE SAKE SAKE!");
+}
+// Else if the user was born after 1995, alert "No Sake for you!"
+else if (birthYear > 1995) {
+  alert("No Sake for you!");
+}
+// If neither of the previous conditions was true (birthYear === 1995) we alert "You inched by!"
+else {
+  alert("You inched by! Sake Sake Sake!");
+}
+
+
+    </script>
+    
+</body>
+</html>

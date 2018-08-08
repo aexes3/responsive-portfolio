@@ -231,7 +231,7 @@ text-align: center;
 }
 /*Contact*/
 input, textarea {
-max-width: 600px;
+max-width: 65%;
 } 
 }
 
@@ -286,7 +286,7 @@ max-width: 600px;
   }
 /*Contact*/
 input, textarea {
-  max-width: 500px;
+  max-width: 50%;
   } 
 }
   
